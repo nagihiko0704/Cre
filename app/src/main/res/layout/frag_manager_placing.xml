@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManagerPlacingFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_white_1">
+
+    <com.shrikanthravi.collapsiblecalendarview.widget.CollapsibleCalendar
+        android:id="@+id/calendarView_placing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grad_main_mint"
+        android:elevation="4dp"
+        app:expandIconColor="@color/main_black_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:primaryColor="@color/transparent"
+        app:selectedItem_background="@drawable/bg_date_selected"
+        app:selectedItem_textColor="@color/bg_white_0"
+        app:textColor="@color/main_black_1"
+        app:todayItem_background="@drawable/bg_today_item"
+        app:todayItem_textColor="@color/main_black_1">
+    </com.shrikanthravi.collapsiblecalendarview.widget.CollapsibleCalendar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_frag_manager_placing"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView_placing" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

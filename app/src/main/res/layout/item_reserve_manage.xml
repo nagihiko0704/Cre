@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card"
+    android:elevation="2dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginHorizontal="18dp">
+
+    <TextView
+        android:id="@+id/textView_item_reserve_manage_field_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="14dp"
+        android:paddingHorizontal="18dp"
+        android:text="경기도 화성시 어쩌동 저쩌단지"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:textColor="@color/main_black_0"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_item_reserve_manage_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="18dp"
+        android:text="25 - 30 - 150 60㎥"
+        android:textColor="@color/main_black_1"
+        android:textSize="14sp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/textView_item_reserve_manage_field_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/textView_item_reserve_manage_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grad_main_mint"
+        android:paddingVertical="10dp"
+        android:layout_marginTop="3dp"
+        android:text="예 약 대 기"
+        android:textColor="@color/main_black_0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/textView_item_reserve_manage_data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

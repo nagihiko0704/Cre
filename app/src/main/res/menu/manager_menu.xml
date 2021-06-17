@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item_manager_reserve"
+        android:title="예약관리"
+        android:icon="@drawable/ic_baseline_book_online_24"
+        android:enabled="true"
+        app:showAsAction="always|withText"
+        />
+
+    <item
+        android:id="@+id/item_manager_placing"
+        android:title="타설관리"
+        android:icon="@drawable/ic_construction_concrete_icon_153229"
+        android:enabled="true"
+        app:showAsAction="withText"
+        />
+
+    <item
+        android:id="@+id/item_manager_leftnum"
+        android:title="잔여물량"
+        android:icon="@drawable/ic_baseline_assessment_24"
+        android:enabled="true"
+        app:showAsAction="withText"
+        />
+
+    <item
+        android:id="@+id/item_manager_setting"
+        android:title="환경설정"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:enabled="true"
+        app:showAsAction="always|withText"
+        />
+
+
+</menu>
