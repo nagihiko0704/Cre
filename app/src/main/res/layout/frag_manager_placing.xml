@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".ManagerPlacingFragment"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/bg_white_1">
+    android:background="@color/transparent">
 
     <com.shrikanthravi.collapsiblecalendarview.widget.CollapsibleCalendar
         android:id="@+id/calendarView_placing"

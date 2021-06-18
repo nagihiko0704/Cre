@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ManagerReserveFragment"
-    android:background="@color/bg_white_1">
+    android:background="@color/transparent">
 
     <com.shrikanthravi.collapsiblecalendarview.widget.CollapsibleCalendar
         android:id="@+id/calendarView_reserve"
@@ -13,16 +13,16 @@
         android:layout_height="wrap_content"
         android:background="@drawable/grad_main_mint"
         android:elevation="4dp"
-        app:expandIconColor="@color/main_black_1"
+        app:expandIconColor="@color/main_black_0"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:primaryColor="@color/transparent"
         app:selectedItem_background="@drawable/bg_date_selected"
         app:selectedItem_textColor="@color/bg_white_0"
-        app:textColor="@color/main_black_1"
+        app:textColor="@color/main_black_0"
         app:todayItem_background="@drawable/bg_today_item"
-        app:todayItem_textColor="@color/main_black_1">
-    </com.shrikanthravi.collapsiblecalendarview.widget.CollapsibleCalendar>
+        app:todayItem_textColor="@color/main_black_1"></com.shrikanthravi.collapsiblecalendarview.widget.CollapsibleCalendar>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView_frag_manager_reserve"

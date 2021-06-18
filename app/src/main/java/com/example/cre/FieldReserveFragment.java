@@ -63,12 +63,12 @@ public class FieldReserveFragment extends Fragment
 
     private void initReserveData()
     {
-        reserveDataList.add(new ReserveData("2021.05.03 (월)", "25 - 35 - 210 70㎥", ReserveState.대기));
+        reserveDataList.add(new ReserveData("2021.05.03 (월)", "25 - 35 - 210 70㎥", ReserveState.취소));
         reserveDataList.add(new ReserveData("2021.05.03 (월)", "25 - 30 - 150 100㎥", ReserveState.대기));
-        reserveDataList.add(new ReserveData("2021.05.01 (토)", "25 - 24 - 150 12㎥", ReserveState.대기));
+        reserveDataList.add(new ReserveData("2021.05.01 (토)", "25 - 24 - 150 12㎥", ReserveState.확정));
         reserveDataList.add(new ReserveData("2021.05.01 (토)", "25 - 35 - 210 60㎥", ReserveState.대기));
-        reserveDataList.add(new ReserveData("2021.04.30 (금)", "25 - 35 - 210 180㎥", ReserveState.대기));
-        reserveDataList.add(new ReserveData("2021.04.29 (목)", "25 - 30 - 210 90㎥", ReserveState.대기));
+        reserveDataList.add(new ReserveData("2021.04.30 (금)", "25 - 35 - 210 180㎥", ReserveState.확정));
+        reserveDataList.add(new ReserveData("2021.04.29 (목)", "25 - 30 - 210 90㎥", ReserveState.취소));
         reserveDataList.add(new ReserveData("2021.04.28 (수)", "25 - 24 - 210 24㎥", ReserveState.대기));
     }
 

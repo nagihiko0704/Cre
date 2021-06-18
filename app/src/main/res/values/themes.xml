@@ -15,7 +15,21 @@
     </style>
 
     <style name="ThemeCre" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="fontFamily">@font/godo_font_family</item>
+        <item name="android:textViewStyle">@style/CustomTextViewStyle</item>
+        <item name="android:buttonStyle">@style/CustomButtonStyle</item>
+        <item name="android:editTextStyle">@style/CustomEditTextViewStyle</item>
 
+    </style>
+
+    <style name="CustomTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/godo_m</item>
+    </style>
+
+    <style name="CustomButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">@font/godo_m</item>
+    </style>
+
+    <style name="CustomEditTextViewStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:fontFamily">@font/godo_m</item>
     </style>
 </resources>

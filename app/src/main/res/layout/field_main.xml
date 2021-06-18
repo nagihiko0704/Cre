@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/constraintLayout_field_container">
+    android:id="@+id/constraintLayout_field_container"
+    android:clipToPadding="false">
 
     <FrameLayout
         android:id="@+id/field_content"
@@ -14,21 +15,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/bg_white_0">
+        android:clipToPadding="false"
+        android:background="@color/bg_white_1">
     </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/main_mint_0"
+        android:background="@color/bg_white_0"
         android:elevation="8dp"
         android:paddingTop="4dp"
         android:paddingBottom="8dp"
+        android:layout_marginTop="10dp"
         app:itemIconTint="@color/color_navi_selector"
         app:itemTextColor="@color/color_navi_selector"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:clipToPadding="false"
         app:menu="@menu/field_menu" />
 </androidx.constraintlayout.widget.ConstraintLayout>
