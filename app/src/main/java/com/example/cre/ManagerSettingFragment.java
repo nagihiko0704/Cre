@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -13,6 +14,8 @@ import org.jetbrains.annotations.NotNull;
 
 public class ManagerSettingFragment extends Fragment
 {
+    private Button profile, leftNum;
+
     @Nullable
     @org.jetbrains.annotations.Nullable
     @Override
@@ -21,5 +24,25 @@ public class ManagerSettingFragment extends Fragment
         View view = inflater.inflate(R.layout.frag_manager_setting, null);
 
         return view;
+    }
+
+    private void setButtons(View v)
+    {
+        profile = v.findViewById(R.id.button_manager_setting_profile);
+        leftNum = v.findViewById(R.id.button_manager_setting_leftnum);
+
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        leftNum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 }

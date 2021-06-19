@@ -9,8 +9,17 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.util.ArrayList;
+
 public class ManagerPlacingAdapter extends RecyclerView.Adapter<ManagerPlacingRecyclerViewHolder>
 {
+    private ArrayList<PlacingData> placingDataArrayList;
+
+    public ManagerPlacingAdapter(ArrayList<PlacingData> placingData)
+    {
+        this.placingDataArrayList = placingData;
+    }
+
     @NonNull
     @NotNull
     @Override
@@ -27,12 +36,13 @@ public class ManagerPlacingAdapter extends RecyclerView.Adapter<ManagerPlacingRe
     @Override
     public void onBindViewHolder(@NonNull @NotNull ManagerPlacingRecyclerViewHolder holder, int position)
     {
-
+        PlacingData placingData = placingDataArrayList.get(position);
+        holder.setView(placingData);
     }
 
     @Override
     public int getItemCount()
     {
-        return 0;
+        return this.placingDataArrayList.size();
     }
 }

@@ -8,6 +8,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.util.ArrayList;
+
 public class ManagerPlacingRecyclerViewHolder extends RecyclerView.ViewHolder
 {
     private TextView field, info1, info2;
@@ -21,8 +23,12 @@ public class ManagerPlacingRecyclerViewHolder extends RecyclerView.ViewHolder
         info2 = itemView.findViewById(R.id.textView_item_placing_info_2);
     }
 
-    public void setView()
+    public void setView(PlacingData placingData)
     {
-
+        field.setText(placingData.getField());
+        info1.setText(placingData.getConcreteArrayList().get(0).getConcreteType()
+                            +" " + placingData.getConcreteArrayList().get(0).getRube() + "㎥");
+        info2.setText(placingData.getConcreteArrayList().get(1).getConcreteType()
+                            +" " + placingData.getConcreteArrayList().get(1).getRube() + "㎥");
     }
 }

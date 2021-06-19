@@ -7,11 +7,12 @@
     android:background="@color/transparent">
 
     <Button
+        android:id="@+id/button_manager_setting_profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingHorizontal="60dp"
         android:paddingVertical="10dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="200dp"
         android:text="개 인 정 보"
         android:textAlignment="center"
         android:textSize="30sp"
@@ -21,6 +22,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_manager_setting_leftnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grad_main_mint"
+        android:elevation="2dp"
+        android:paddingHorizontal="60dp"
+        android:paddingVertical="10dp"
+        android:layout_marginBottom="200dp"
+        android:text="물 량 관 리"
+        android:textAlignment="center"
+        android:textColor="@color/main_black_0"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
