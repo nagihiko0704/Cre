@@ -28,7 +28,9 @@
     </style>
 
     <style name="CustomButtonStyle" parent="Widget.AppCompat.Button">
-        <item name="android:fontFamily">@font/godo_m</item>
+        <item name="android:fontFamily">@font/godo_b</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 
     <style name="CustomEditTextViewStyle" parent="Widget.AppCompat.EditText">

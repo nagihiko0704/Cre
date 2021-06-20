@@ -9,6 +9,7 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -23,6 +24,8 @@ public class ManagerSettingFragment extends Fragment
     {
         View view = inflater.inflate(R.layout.frag_manager_setting, null);
 
+        setButtons(view);
+
         return view;
     }
 
@@ -34,7 +37,10 @@ public class ManagerSettingFragment extends Fragment
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.manager_content, new ProfileFragment());
+                transaction.addToBackStack(null);
+                transaction.commit();
             }
         });
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_white_1"
-    android:paddingVertical="20dp"
+    android:paddingVertical="40dp"
     android:paddingHorizontal="16dp">
 
 
@@ -153,7 +153,8 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_profile_modify"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/grad_main_mint"
