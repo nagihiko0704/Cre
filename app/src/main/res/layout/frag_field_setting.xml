@@ -2,6 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/transparent">
+    android:background="@color/bg_white_0">
+
+    <fragment
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.cre.ProfileFragment"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

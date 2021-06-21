@@ -6,14 +6,14 @@ public class AppData
 {
     private static AppData instance;
 
-    static String fieldID, fieldPassword, fieldEmail;
-    static int fieldTel, fieldPhone;
+    private String fieldID, fieldPassword, fieldEmail;
+    private int fieldTel, fieldPhone;
 
-    static String managerID, managerPassword, managerEmail;
-    static int managerTel, managerPhone;
+    private String managerID, managerPassword, managerEmail;
+    private int managerTel, managerPhone;
 
-    static ArrayList<PlacingData> placingDataList = new ArrayList<>();
-    static ArrayList<ReserveData> reserveDataList = new ArrayList<>();
+    private ArrayList<PlacingData> placingDataList = new ArrayList<>();
+    private ArrayList<ReserveData> reserveDataList = new ArrayList<>();
 
 
     private AppData()
@@ -40,99 +40,99 @@ public class AppData
         else return instance;
     }
 
-    public static String getFieldID() {
+    public String getFieldID() {
         return fieldID;
     }
 
-    public static void setFieldID(String fieldID) {
-        AppData.fieldID = fieldID;
+    public void setFieldID(String fieldID) {
+        this.fieldID = fieldID;
     }
 
-    public static String getFieldPassword() {
+    public String getFieldPassword() {
         return fieldPassword;
     }
 
-    public static void setFieldPassword(String fieldPassword) {
-        AppData.fieldPassword = fieldPassword;
+    public void setFieldPassword(String fieldPassword) {
+        this.fieldPassword = fieldPassword;
     }
 
-    public static String getFieldEmail() {
+    public String getFieldEmail() {
         return fieldEmail;
     }
 
-    public static void setFieldEmail(String fieldEmail) {
-        AppData.fieldEmail = fieldEmail;
+    public void setFieldEmail(String fieldEmail) {
+        this.fieldEmail = fieldEmail;
     }
 
-    public static int getFieldTel() {
+    public int getFieldTel() {
         return fieldTel;
     }
 
-    public static void setFieldTel(int fieldTel) {
-        AppData.fieldTel = fieldTel;
+    public void setFieldTel(int fieldTel) {
+        this.fieldTel = fieldTel;
     }
 
-    public static int getFieldPhone() {
+    public int getFieldPhone() {
         return fieldPhone;
     }
 
-    public static void setFieldPhone(int fieldPhone) {
-        AppData.fieldPhone = fieldPhone;
+    public void setFieldPhone(int fieldPhone) {
+        this.fieldPhone = fieldPhone;
     }
 
-    public static String getManagerID() {
+    public String getManagerID() {
         return managerID;
     }
 
-    public static void setManagerID(String managerID) {
-        AppData.managerID = managerID;
+    public void setManagerID(String managerID) {
+        this.managerID = managerID;
     }
 
-    public static String getManagerPassword() {
+    public String getManagerPassword() {
         return managerPassword;
     }
 
-    public static void setManagerPassword(String managerPassword) {
-        AppData.managerPassword = managerPassword;
+    public void setManagerPassword(String managerPassword) {
+        this.managerPassword = managerPassword;
     }
 
-    public static String getManagerEmail() {
+    public String getManagerEmail() {
         return managerEmail;
     }
 
-    public static void setManagerEmail(String managerEmail) {
-        AppData.managerEmail = managerEmail;
+    public void setManagerEmail(String managerEmail) {
+        this.managerEmail = managerEmail;
     }
 
-    public static int getManagerTel() {
+    public int getManagerTel() {
         return managerTel;
     }
 
-    public static void setManagerTel(int managerTel) {
-        AppData.managerTel = managerTel;
+    public void setManagerTel(int managerTel) {
+        this.managerTel = managerTel;
     }
 
-    public static int getManagerPhone() {
+    public int getManagerPhone() {
         return managerPhone;
     }
 
-    public static void setManagerPhone(int managerPhone) {
-        AppData.managerPhone = managerPhone;
+    public void setManagerPhone(int managerPhone) {
+        this.managerPhone = managerPhone;
     }
 
-    public static ArrayList<PlacingData> getPlacingDataList() {
+    public ArrayList<PlacingData> getPlacingDataList() {
         return placingDataList;
     }
 
-    public static void setPlacingDataList(ArrayList<PlacingData> placingDataList) {
-        AppData.placingDataList = placingDataList;
+    public void setPlacingDataList(ArrayList<PlacingData> placingDataList) {
+        this.placingDataList = placingDataList;
     }
 
-    public static ArrayList<ReserveData> getReserveDataList() {
+    public ArrayList<ReserveData> getReserveDataList() {
         return reserveDataList;
     }
 
-    public static void setReserveDataList(ArrayList<ReserveData> reserveDataList) {
-        AppData.reserveDataList = reserveDataList;
+    public void setReserveDataList(ArrayList<ReserveData> reserveDataList) {
+        this.reserveDataList = reserveDataList;
     }
 }

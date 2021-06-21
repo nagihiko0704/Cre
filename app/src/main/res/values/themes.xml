@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.Cre" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/main_mint_0</item>
+        <item name="colorPrimaryVariant">@color/main_mint_1</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -19,7 +19,7 @@
         <item name="buttonStyle">@style/CustomButtonStyle</item>
         <item name="editTextStyle">@style/CustomEditTextViewStyle</item>
         <item name="textInputStyle">@style/CustomTextInputLayoutStyle</item>
-        <item name="statusBarBackground"></item>
+        <item name="statusBarBackground">@color/transparent</item>
 
     </style>
 
@@ -30,7 +30,7 @@
     <style name="CustomButtonStyle" parent="Widget.AppCompat.Button">
         <item name="android:fontFamily">@font/godo_b</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/white</item>
+        <item name="android:textColor">@color/main_black_0</item>
     </style>
 
     <style name="CustomEditTextViewStyle" parent="Widget.AppCompat.EditText">
